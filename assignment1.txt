@@ -212,30 +212,7 @@ table.
 select avg(salary) from employees
 
 
-Select max(salary) from employees
-Where job_id in(select job_id from jobs
-Where job_title =’clerk’)
 
-Select max(salary) from employees
-Where department_id in(select department_id from jobs
-Where department_id=20)
-Select max(salary) from employees
-Where department_id=20
-
-
-Select min(salary) from employees
-Where job_id in(select job_id from jobs
-Where job_title =’slaesman’)
-
-Select avg(salary) from employees
-Where job_id in(select job_id from jobs
-Where job_title =’managers’)
-
-Select sum(salary) as total_salary from employees
-Where job_id in(select job_id from jobs where job_title=’analyst’) and department_id=40
-
-Select first_name,salary from employee
-Order by salary asec
 
 
 
